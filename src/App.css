@@ -21,6 +21,9 @@
 }
 
 .container{
+  max-width: 700px;
+   margin: 0 auto;
+  padding: 6em 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -40,10 +43,16 @@
 }
 .container > Button:last-child {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   grid-row-start: 6;
-  background-color:  #edecec;;
+  background-color:  #edecec;
 }
 .container > Button:nth-child(7) {
   grid-column-start: 4;
 }
+.container > Button:nth-child(8) {
+  grid-row-start: 6;
+  grid-column-start: 3;
+  background-color:  #edecec;
+}
+ 

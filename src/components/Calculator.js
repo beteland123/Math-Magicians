@@ -11,6 +11,7 @@ function Calculator() {
       <Button name="-" />
       <Button name="+" />
       <Button name="=" />
+      <Button name="." />
       <Button name="0" />
 
     </div>
