@@ -89,7 +89,7 @@ npm run build
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
 
-### 👤 **Jorge Camargo**  
+### 👤 **Betel Andarge**  
 
   - GitHub: [@Betel](https://github.com/beteland123)
 
