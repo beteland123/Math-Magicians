@@ -1,20 +1,20 @@
-import Button from './Button.js';
+import Button from './Button';
 
 function Body() {
   return (
     <div className="body">
-      <Button name="AC" />
-      <Button name="+/-" />
-      <Button name="%" />
-      <Button name={7} />
-      <Button name={8} />
-      <Button name={9} />
-      <Button name={4} />
-      <Button name={5} />
-      <Button name={6} />
-      <Button name={1} />
-      <Button name={2} />
-      <Button name={3} />
+      <Button name="AC" className="reset" />
+      <Button name="+/-" className="opration" />
+      <Button name="%" className="opration" />
+      <Button name="7" className="number" />
+      <Button name="8" className="number" />
+      <Button name="9" className="number" />
+      <Button name="4" className="number" />
+      <Button name="5" className="number" />
+      <Button name="6" className="number" />
+      <Button name="1" className="number" />
+      <Button name="2" className="number" />
+      <Button name="3" className="number" />
 
     </div>
   );

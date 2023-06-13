@@ -4,15 +4,15 @@ import Body from './Body';
 function Calculator() {
   return (
     <div className="container">
-      <Button name={0} />
+      <Button name="0" className="result" />
       <Body />
-      <Button name="/" />
-      <Button name="x" />
-      <Button name="-" />
-      <Button name="+" />
-      <Button name="=" />
-      <Button name="." />
-      <Button name="0" />
+      <Button name="/" className="opration" />
+      <Button name="x" className="opration" />
+      <Button name="-" className="opration" />
+      <Button name="+" className="opration" />
+      <Button name="=" className="opration" />
+      <Button name="." className="opration" />
+      <Button name="0" className="number" />
 
     </div>
 
