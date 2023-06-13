@@ -82,14 +82,14 @@ npm run build
 - React: JavaScript library for building user interfaces.
 - HTML: Markup language for creating the structure of web pages.
 - CSS: Styling language for designing the visual presentation of web pages.
-- JavaScript: Programming language for implementing interactive functionality.
+- JavaScript: A programming language for implementing interactive functionality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
 
-### 👤 **Jorge Camargo**  
+### 👤 **Betel Andarge**  
 
   - GitHub: [@Betel](https://github.com/beteland123)
 
