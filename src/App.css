@@ -1,39 +1,49 @@
-.App {
+.body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: lightgray;
+}
+
+.container > * {
+  background-color: orange;
+  border: 1px solid #666;
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container > *:hover {
+  background-color: #555; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container > *:active {
+  background-color: #666; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.container > .body{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 6;
 }
 
-.App-link {
-  color: #61dafb;
+.container > Button:first-child {
+  text-align: end;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: gray;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.container > Button:last-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  background-color:  #edecec;;
+}
+.container > Button:nth-child(7) {
+  grid-column-start: 4;
 }
