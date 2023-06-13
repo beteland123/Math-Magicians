@@ -17,6 +17,7 @@
 - [💻 Getting Started](#getting-started)
 - [🛠 Technologies Used](#technologies-used)
 - [👥 Authors ](#-authors-)
+- [:telescope: Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support ](#️-show-your-support-)
 - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -82,7 +83,7 @@ npm run build
 - React: JavaScript library for building user interfaces.
 - HTML: Markup language for creating the structure of web pages.
 - CSS: Styling language for designing the visual presentation of web pages.
-- JavaScript: Programming language for implementing interactive functionality.
+- JavaScript: A programming language for implementing interactive functionality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,6 +99,16 @@ npm run build
   - LinkedIn: [Betel](https://linkedin.com/in/betel-andarge-1b9446223)
 
   _Feel free to reach out to us if you have any questions or collaboration opportunities!_
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :telescope: Future Features <a name="future-features"></a>
+
+
+- [ ] Add functionality and event listener  for each button
+- [ ] Add automatic testing
+- [ ] Add some header with the link about quotes and the homepage
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
