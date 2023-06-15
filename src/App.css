@@ -37,7 +37,7 @@
   border: 1px solid #666;
 }
 
-.container > button:first-child {
+.container > input:first-child {
   text-align: end;
   grid-column-start: 1;
   grid-column-end: 5;

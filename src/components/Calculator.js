@@ -12,7 +12,14 @@ function Calculator() {
   };
   return (
     <div className="container">
-      <Button name={count.total || count.next || '0'} className="result" />
+
+      <input
+        type="text"
+        readOnly
+        value={count.next || count.total || '0'}
+        className="result"
+      />
+
       <Body onClick={() => handleClick()} count={count} setCount={setCount} />
       <Button onClick={() => handleClick('÷')} name="÷" className="opration" />
       <Button onClick={() => handleClick('x')} name="x" className="opration" />
