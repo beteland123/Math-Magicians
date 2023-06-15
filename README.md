@@ -106,7 +106,6 @@ npm run build
 ## :telescope: Future Features <a name="future-features"></a>
 
 
-- [ ] Add functionality and event listener  for each button
 - [ ] Add automatic testing
 - [ ] Add some header with the link about quotes and the homepage
 
