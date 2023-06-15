@@ -34,6 +34,7 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 6;
+  border: 1px solid #666;
 }
 
 .container > button:first-child {
