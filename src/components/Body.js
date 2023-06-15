@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
+import calculate from '../logic/calculate';
 
-function Body({ onClick }) {
+function Body({ count, setCount }) {
   const handleClick = (name) => {
-    onClick(name);
+    setCount(calculate(count, name));
   };
 
   return (
@@ -26,11 +27,11 @@ function Body({ onClick }) {
   );
 }
 Body.propTypes = {
-  onClick: PropTypes.func,
+  count: PropTypes.isRequired,
+  setCount: PropTypes.func,
 };
 
 Body.defaultProps = {
-  onClick: () => {},
+  setCount: () => {},
 };
-
 export default Body;
