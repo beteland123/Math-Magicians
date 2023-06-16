@@ -7,7 +7,7 @@ function Quate() {
   useEffect(() => {
     const fetchquate = async () => {
       try {
-        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=intelligence', {
+        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=computers', {
           headers: {
             'X-Api-Key': 'FSAUvyMJg/Y3slpTVoMV6Q==E715G6wVjjSzZ2QG',
           },
