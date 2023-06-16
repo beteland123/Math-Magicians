@@ -13,7 +13,7 @@
 
 - [📗 Table of Contents](#table-of-contents)
 - [📖 Description](#description)
-- [⭐️ Features](#️app-features)
+- [⭐️Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
 - [🛠 Technologies Used](#technologies-used)
 - [👥 Authors ](#-authors-)
@@ -31,7 +31,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FEATURES -->
-## ⭐️ Features <a name="app-features"></a>
+### ⭐️ Key Features <a name="key-features"></a>
 
 - Calculator: Perform basic mathematical operations such as addition, subtraction, multiplication, and division.
 - Random Quote: Read and enjoy random math-related quotes to spark inspiration and curiosity.
