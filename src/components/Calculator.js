@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Button from './Button';
 import Body from './Body';
 import calculate from '../logic/calculate';
-import Quate from './Quot';
 
 function Calculator() {
   // useState hook  to add state to functional components. It takes an initial value as an argument
@@ -32,7 +31,6 @@ function Calculator() {
         <Button onClick={() => handleClick('0')} name="0" className="number" />
 
       </div>
-      <Quate />
     </div>
   );
 }
