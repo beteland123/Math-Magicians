@@ -12,7 +12,7 @@ function Quate() {
         });
         const data = await response.json();
 
-        setQuate(data[0]);
+        setQuate(data[0], data[1]);
       } catch (error) {
         setQuate('Error fetching quote');
       }
@@ -22,8 +22,15 @@ function Quate() {
   }, []);
   return (
     <div>
-      <h2>Quate</h2>
-      <p>{quate.quote}</p>
+      <h2>Quate for You</h2>
+      <p>
+        Quate   :
+        {quate.quote}
+      </p>
+      <p>
+        Author   :
+        {quate.author}
+      </p>
     </div>
   );
 }
