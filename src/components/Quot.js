@@ -31,7 +31,7 @@ function Quate() {
     return (<p>{error}</p>);
   }
   return (
-    <div>
+    <div className="quatesDiv">
       <h2>Quate for You</h2>
       <p>
         Quate   :

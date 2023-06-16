@@ -60,3 +60,9 @@
   grid-column-start: 3;
   background-color: #edecec;
 }
+.quatesDiv{
+   box-shadow: 10px 10px 10px 10px gray;
+    margin: 0 auto;
+    padding: 33px;
+    max-width: 646px;
+}
