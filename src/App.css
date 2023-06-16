@@ -1,6 +1,7 @@
-*{
-  font-family:cursive;
+* {
+  font-family: cursive;
 }
+
 .body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,10 +39,11 @@
   grid-row-start: 2;
   grid-row-end: 6;
 }
-.container > .body >button{
-  background-color: #666;
 
+.container > .body > button {
+  background-color: #666;
 }
+
 .container > input:first-child {
   text-align: end;
   grid-column-start: 1;
@@ -53,7 +55,7 @@
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 6;
-  background-color:  #666;
+  background-color: #666;
 }
 
 .container > button:nth-child(7) {
@@ -65,10 +67,11 @@
   grid-column-start: 3;
   background-color: #666;
 }
-.quatesDiv{
-   box-shadow: 10px 10px 10px 10px gray;
-    margin: 0 auto;
-    padding: 33px;
-    max-width: 646px;
-    background-color: gray;
+
+.quatesDiv {
+  box-shadow: 10px 10px 10px 10px gray;
+  margin: 0 auto;
+  padding: 33px;
+  max-width: 646px;
+  background-color: gray;
 }
