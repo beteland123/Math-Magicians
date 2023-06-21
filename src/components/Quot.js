@@ -32,7 +32,7 @@ function Quate() {
   }
   return (
     <div className="quatesDiv">
-      <h2>Quate for You 😊 </h2>
+      <h2 className="quatH2">Quotes for You 😊 </h2>
       <p>
         Quate   :
         {quate.quote}
