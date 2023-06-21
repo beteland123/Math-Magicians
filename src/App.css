@@ -27,7 +27,7 @@
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 6em 20px;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -68,10 +68,69 @@
   background-color: #666;
 }
 
+/* quates style */
 .quatesDiv {
   box-shadow: 10px 10px 10px 10px gray;
   margin: 0 auto;
   padding: 33px;
   max-width: 646px;
   background-color: gray;
+}
+
+/* nav style */
+.nav {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navDiv {
+  gap: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navDiv a {
+  color: rgb(248, 120, 7);
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px pink;
+}
+
+/* home style */
+.home {
+  color: rgb(173 115 63);
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+h1 {
+  color: rgb(171 34 112);
+  font-size: 3rem;
+}
+
+h2 {
+  color: rgb(171 34 112);
+}
+
+.paragraph {
+  box-shadow: 10px 10px 10px 10px gray;
+  background-color: gray;
+  color: black;
+  margin: 0 auto;
+  padding: 33px;
+}
+
+.calcPage {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.quatH2 {
+  color: black;
 }
