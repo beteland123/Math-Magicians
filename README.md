@@ -107,7 +107,7 @@ npm run build
 
 
 - [ ] Add automatic testing
-- [ ] Add some header with the link about quotes and the homepage
+- [ ] Add some animation
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
