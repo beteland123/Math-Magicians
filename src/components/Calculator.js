@@ -11,7 +11,8 @@ function Calculator() {
     setCount(calculate(count, name));
   };
   return (
-    <div>
+    <div className="calcPage">
+      <h2>Lets do some math</h2>
       <div className="container">
 
         <input
