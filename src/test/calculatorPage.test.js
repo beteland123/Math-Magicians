@@ -5,28 +5,25 @@ import {
 import Calculator from '../components/Calculator';
 
 describe('Check Calculator page ', () => {
-  
+  test('renders the calculator component with the data when navigating to /calculator', () => {
+    render(
+      <MemoryRouter initialEntries={['/Calculator']}>
+        <Routes>
+          <Route path="/Calculator" element={<Calculator />} />
+        </Routes>
+      </MemoryRouter>,
+    );
 
-    test('renders the calculator component with the data when navigating to /calculator', () => {
-      render(
-        <MemoryRouter initialEntries={['/Calculator']}>
-          <Routes>
-            <Route path="/Calculator" element={<Calculator />} />
-          </Routes>
-        </MemoryRouter>,
-      );
-  
-      expect(screen.getByText('3')).toBeInTheDocument();
-    });
-    test(' it should match the snapshoot',()=>{
-      const { container } =render(
-            <MemoryRouter initialEntries={['/Calculator']}>
-              <Routes>
-                <Route path="/Calculator" element={<Calculator />} />
-              </Routes>
-            </MemoryRouter>,
-          );
-          expect(container).toMatchSnapshot();
-      
-    })
+    expect(screen.getByText('Lets do some math')).toBeInTheDocument();
+  });
+  test(' it should match the snapshoot', () => {
+    const { container } = render(
+      <MemoryRouter initialEntries={['/Calculator']}>
+        <Routes>
+          <Route path="/Calculator" element={<Calculator />} />
+        </Routes>
+      </MemoryRouter>,
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

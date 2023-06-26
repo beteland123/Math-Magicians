@@ -5,7 +5,6 @@ import {
 import Quate from '../components/Quot';
 
 describe('Check Quote page ', () => {
-
   test('renders the Quate component with data', async () => {
     const mockData = [
       {

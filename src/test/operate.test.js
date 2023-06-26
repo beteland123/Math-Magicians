@@ -3,7 +3,7 @@ import operate from '../logic/operate';
 describe('test oprator', () => {
   const num1 = '10';
   const num2 = 5;
-  
+
   test('adds two numbers correctly', () => {
     const operation = '+';
     const expectedResult = 10 + 5;
@@ -26,7 +26,6 @@ describe('test oprator', () => {
   });
 
   test('it should divide correctly', () => {
-    const opration = '÷';
     const expectedResult = 10 / 5;
     const result = operate(num1, num2, '÷');
     expect(result).toBe(expectedResult.toString());
@@ -50,6 +49,4 @@ describe('test oprator', () => {
   test('it should throw an error for unknown operations', () => {
     expect(() => operate(num1, num2, 'sqrt')).toThrow("Unknown operation 'sqrt'");
   });
-
-
 });
