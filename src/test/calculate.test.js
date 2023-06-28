@@ -1,54 +1,41 @@
 import calculate from '../logic/calculate';
+import operate from '../logic/operate';
 
-describe('test the calculate', () => {
-  let buttonName;
-  test('it should clear ', () => {
-    buttonName = 'AC';
-    const obj = {
-      total: 6,
-      next: '4',
-      operation: '+',
-    };
-    const expected = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    expect(calculate(obj, buttonName)).toEqual(expected);
+// Mocking the 'operate' function for testing
+jest.mock('../logic/operate', () => jest.fn());
+
+describe('calculate', () => {
+  beforeEach(() => {
+    operate.mockClear();
   });
-  test('it should return nothing when 0 is button name and the next number ', () => {
-    buttonName = '0';
-    const obj = {
-      total: 0,
-      next: '0',
-    };
-    const expected = {};
-    expect(calculate(obj, buttonName)).toEqual(expected);
+
+  test('AC button should return initial calculator data', () => {
+    const result = calculate({ total: '10', next: '5', operation: '+' }, 'AC');
+    expect(result).toEqual({ total: null, next: null, operation: null });
   });
-  test('If there is an operation, update next ', () => {
-    buttonName = '3';
-    const obj = {
-      total: 6,
-      next: '4',
-      operation: '+',
-    };
-    const expected = {
-      total: 6,
-      next: obj.next + buttonName,
-      operation: '+',
-    };
-    expect(calculate(obj, buttonName)).toEqual(expected);
+
+  test('Number button should update next value', () => {
+    const result = calculate({ total: '10', next: '5', operation: '+' }, '2');
+    expect(result).toEqual({ total: '10', next: '52', operation: '+' });
   });
-  test('If there is no operation, update next and clear value', () => {
-    buttonName = '3';
-    const obj = {
-      total: 6,
-      next: '4',
-    };
-    const expected = {
-      total: null,
-      next: obj.next + buttonName,
-    };
-    expect(calculate(obj, buttonName)).toEqual(expected);
+
+  test('Operation button should update operation and calculate total if necessary', () => {
+    operate.mockImplementation(() => '15');
+    const result = calculate({ total: '10', next: '5', operation: '+' }, '-');
+    expect(operate).toHaveBeenCalledWith('10', '5', '+');
+    expect(result).toEqual({ total: '15', next: null, operation: '-' });
   });
+
+  test('Equal button should calculate total when next and operation are present', () => {
+    operate.mockImplementation(() => '20');
+    const result = calculate({ total: '10', next: '5', operation: '+' }, '=');
+    expect(operate).toHaveBeenCalledWith('10', '5', '+');
+    expect(result).toEqual({ total: '20', next: null, operation: null });
+  });
+
+  test('Operation button after equal should update operation and reset next', () => {
+    const result = calculate({ total: '10', next: null, operation: '+' }, '-');
+    expect(result).toEqual({ total: '10', next: null, operation: '-' });
+  });
+
 });
