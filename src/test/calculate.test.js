@@ -37,5 +37,4 @@ describe('calculate', () => {
     const result = calculate({ total: '10', next: null, operation: '+' }, '-');
     expect(result).toEqual({ total: '10', next: null, operation: '-' });
   });
-
 });
