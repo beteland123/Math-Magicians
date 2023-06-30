@@ -27,7 +27,11 @@ function Body({ count, setCount }) {
   );
 }
 Body.propTypes = {
-  count: PropTypes.isRequired,
+  count: PropTypes.shape({
+    total: PropTypes.string,
+    next: PropTypes.string,
+    operation: PropTypes.string,
+  }).isRequired,
   setCount: PropTypes.func,
 };
 

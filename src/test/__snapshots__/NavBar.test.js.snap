@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test navabar it should match the snapshoot 1`] = `
+<div>
+  <nav
+    class="nav"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <div
+      class="navDiv"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/Calculator"
+      >
+        Calculator
+      </a>
+      <a
+        href="/Quote"
+      >
+        Quote
+      </a>
+    </div>
+  </nav>
+</div>
+`;
