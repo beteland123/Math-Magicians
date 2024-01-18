@@ -48,7 +48,7 @@
   text-align: end;
   grid-column-start: 1;
   grid-column-end: 5;
-  background-color: #3f3e3e;
+  background-color: #ccd49a;
 }
 
 .container > button:last-child {
