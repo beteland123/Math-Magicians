@@ -27,7 +27,7 @@ code {
 }
 
 #root {
-    min-height: 60em;
-    background-size: cover;
-    background-image: url(img/star.jpg);
+  min-height: 60em;
+  background-size: cover;
+  background-image: url(img/star.jpg);
 }
